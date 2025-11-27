@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Anthonny Marcelo Rojas</title>
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Devicon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- CSS Principal -->
+    <link rel="stylesheet" href="/src/style/style.css">
+</head>
+<body>
+    <!-- FORMAS ABSTRACTAS DE FONDO -->
+    <div class="gradient-overlay"></div>
+    <div class="background-shapes">
+        <div class="shape shape-circle shape-circle-1"></div>
+        <div class="shape shape-circle shape-circle-2"></div>
+        <div class="shape shape-circle shape-circle-3"></div>
+        <div class="shape shape-square shape-square-1"></div>
+        <div class="shape shape-square shape-square-2"></div>
+        <div class="shape shape-triangle shape-triangle-1"></div>
+        <div class="shape shape-triangle shape-triangle-2"></div>
+        <div class="shape shape-line shape-line-1"></div>
+        <div class="shape shape-line shape-line-2"></div>
+    </div>
+
+    <!-- NAVEGACIÓN PRINCIPAL -->
+    <nav id="navbar">
+        <div class="nav-links">
+            <a href="#hero" class="nav-link active">INICIO</a>
+            <a href="#about" class="nav-link">SOBRE MÍ</a>
+            <a href="#projects" class="nav-link">PROYECTOS</a>
+            <a href="#experience" class="nav-link">EXPERIENCIA</a>
+            <a href="#contact" class="nav-link">CONTACTO</a>
+        </div>
+    </nav>
+
+    <!-- MENÚ HAMBURGUESA -->
+    <div class="menu-toggle" id="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- MENÚ MOBILE -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="nav-links">
+            <a href="#hero" class="nav-link mobile-link active">INICIO</a>
+            <a href="#about" class="nav-link mobile-link">SOBRE MÍ</a>
+            <a href="#projects" class="nav-link mobile-link">PROYECTOS</a>
+            <a href="#experience" class="nav-link mobile-link">EXPERIENCIA</a>
+            <a href="#contact" class="nav-link mobile-link">CONTACTO</a>
+        </div>
+        <div class="mobile-controls">
+            <div class="control-btn" id="darkModeToggleMobile" title="Toggle Dark Mode">🌙</div>
+            <div class="control-btn" id="langToggleMobile" title="Change Language">EN</div>
+        </div>
+    </div>
+
+    <!-- REDES SOCIALES -->
+    <div class="social-links">
+        <a href="https://instagram.com" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" title="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://wa.me/51939236024" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="controls">
+        <div class="control-btn" id="darkModeToggle" title="Toggle Dark Mode">🌙</div>
+        <div class="control-btn" id="langToggle" title="Change Language">EN</div>
+    </div>
+
+    <!-- LOGO -->
+    <div class="logo-container">
+        <div class="logo-text">A M R</div>
+    </div>
+
+    <!-- SECCIÓN HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Anthonny Marcelo Rojas</h1>
+            <div class="subtitle">Full-Stack Developer | Especialista en Automatización</div>
+            <div class="location">Based in Lima, Perú</div>
+        </div>
+
+        <div class="main-grid">
+            <!-- COLUMNA IZQUIERDA -->
+            <div class="left-column">
+                <div class="info-block">
+                    <div class="label">BIOGRAFÍA</div>
+                    <div class="content">
+                        Construyo soluciones web completas y automatizo procesos complejos.<br>
+                        Soy un Desarrollador Full-Stack especializado en crear aplicaciones eficientes (React & Node.js) y optimizar operaciones empresariales con Google Apps Script.
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="label">CONTACTO</div>
+                    <div class="content">
+                        Lima, Perú<br>
+                        <a href="mailto:anthonny.marcelo.rojas@gmail.com">anthonny.marcelo.rojas@gmail.com</a><br>
+                        +51 9 939236024
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <div class="label">SERVICIOS</div>
+                    <div class="content">
+                        Desarrollo Full-Stack<br>
+                        Automatización con Google Apps Script<br>
+                        Desarrollo de APIs Backend<br>
+                        Integración con Google Workspace
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA CENTRAL (FOTO) -->
+            <div class="center-column">
+                <div class="image-wrapper">
+                    <div class="background-circle"></div>
+                    <div class="profile-frame">
+                        <div class="profile-placeholder">👤</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA DERECHA (ESTADÍSTICAS) -->
+            <div class="right-column">
+                <div class="stat-block">
+                    <div class="label">AÑOS DE EXPERIENCIA</div>
+                    <div class="stat-number">+1.5</div>
+                </div>
+
+                <div class="stat-block">
+                    <div class="label">CLIENTES SATISFECHOS</div>
+                    <div class="stat-number">100%</div>
+                </div>
+
+                <div class="stat-block">
+                    <div class="label">PROYECTOS EN GITHUB</div>
+                    <div class="stat-number">+6</div>
+                </div>
+
+                <div class="stat-block">
+                    <div class="label">CERTIFICACIONES</div>
+                    <div class="stat-number">5</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="about">
+        <div class="about-container">
+            <h2 class="section-title scroll-reveal">Sobre Mí</h2>
+            <p class="section-subtitle scroll-reveal">Desarrollador especializado en soluciones completas y automatización inteligente</p>
+            
+            <div class="about-layout">
+                <!-- LADO IZQUIERDO -->
+                <div class="about-left scroll-reveal-left">
+                    <div class="about-intro">
+                        <p class="intro-hook">
+                            <span class="highlight-text">"¿Por qué hacerlo manual si un script puede hacerlo en segundos?"</span>
+                        </p>
+                        
+                        <p>
+                            Esa es la filosofía que guía mi trabajo. Más que un <strong>Desarrollador Full-Stack</strong>, soy un solucionador de problemas operativos. Comencé mi camino optimizando flujos logísticos y descubrí que mi verdadera pasión no era solo mover datos, sino <strong>automatizar cómo se mueven</strong>.
+                        </p>
+
+                        <div class="highlight-box" style="background: rgba(255,255,255,0.05); padding: 15px; border-left: 3px solid #00ff88; margin: 20px 0; border-radius: 0 8px 8px 0;">
+                            <h4 style="color: #ff000071; margin-bottom: 5px;">Caso de Éxito: Yobel SCM</h4>
+                            <p style="font-size: 0.95em; margin: 0;">
+                                Me enfrenté a un cuello de botella operativo masivo. ¿La solución? Creé un ecosistema digital interno que integró Google Workspace con scripts personalizados. 
+                                <br><br>
+                                <strong>El resultado:</strong> Reducción del 70% en tiempos de gestión y eliminación casi total de errores humanos en la generación de tickets y citas.
+                            </p>
+                        </div>
+
+                        <p>
+                            Hoy combino la agilidad de <strong>Google Apps Script</strong> y <strong>AppSheet</strong> para soluciones rápidas, con la robustez de <strong>React</strong> y <strong>Node.js</strong> para aplicaciones escalables.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- LADO DERECHO (HABILIDADES) -->
+                <div class="about-right scroll-reveal-right">
+                    <div class="skills-header">
+                        <h3>Stack Tecnológico</h3>
+                        <p>Herramientas y tecnologías que domino</p>
+                    </div>
+                    
+                    <div class="skills-container">
+                        <div class="skills-connector"></div>
+                        
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fab fa-react"></i></span>
+                            <div class="skill-name-hex">React.js</div>
+                            <div class="skill-level-hex">Avanzado</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fab fa-node-js"></i></span>
+                            <div class="skill-name-hex">Node.js</div>
+                            <div class="skill-level-hex">Avanzado</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fab fa-google"></i></span>
+                            <div class="skill-name-hex">Apps Script</div>
+                            <div class="skill-level-hex">Experto</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fab fa-js-square"></i></span>
+                            <div class="skill-name-hex">JavaScript</div>
+                            <div class="skill-level-hex">Avanzado</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fas fa-table"></i></span>
+                            <div class="skill-name-hex">AppSheet</div>
+                            <div class="skill-level-hex">Avanzado</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fas fa-plug"></i></span>
+                            <div class="skill-name-hex">API Rest</div>
+                            <div class="skill-level-hex">Avanzado</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fab fa-html5"></i></span>
+                            <div class="skill-name-hex">HTML/CSS</div>
+                            <div class="skill-level-hex">Experto</div>
+                        </div>
+
+                        <div class="skill-hexagon">
+                            <span class="skill-icon"><i class="fas fa-file-excel"></i></span>
+                            <div class="skill-name-hex">Excel Avanz.</div>
+                            <div class="skill-level-hex">Experto</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section id="projects">
+        <div class="projects-container">
+            <h2 class="section-title scroll-reveal">Proyectos Destacados</h2>
+            <div class="projects-grid">
+                
+                <!-- PROYECTO 1 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80')">
+                        <div class="project-number">01</div>
+                        <div class="project-icon"><i class="fas fa-window-maximize"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Web Development</div>
+                        <h3 class="project-title-new">Express Glass - Sitio Web Corporativo</h3>
+                        <p class="project-description-new">
+                            Desarrollo completo de página web para empresa de instalación de ventanas PVC. Sitio 100% responsive con diseño moderno y funcional.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">HTML5</span>
+                            <span class="tag-new">CSS3</span>
+                            <span class="tag-new">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="#" class="project-link">→</a>
+                </div>
+
+                <!-- PROYECTO 2 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=800&q=80')">
+                        <div class="project-number">02</div>
+                        <div class="project-icon"><i class="fas fa-ticket-alt"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Automation</div>
+                        <h3 class="project-title-new">Generador Automático de Vouchers</h3>
+                        <p class="project-description-new">
+                            Sistema que genera vouchers automáticos con código QR y de barras desde Google Sheets. Envío por correo con mensaje personalizado.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">Apps Script</span>
+                            <span class="tag-new">Google Sheets</span>
+                            <span class="tag-new">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="https://github.com/AnthonnyM31" class="project-link" target="_blank">→</a>
+                </div>
+
+                <!-- PROYECTO 3 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80')">
+                        <div class="project-number">03</div>
+                        <div class="project-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Google Apps Script</div>
+                        <h3 class="project-title-new">Geolocalizador Automático</h3>
+                        <p class="project-description-new">
+                            Script que obtiene latitud y longitud automáticamente a partir de direcciones en Google Sheets usando APIs de geolocalización.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">Apps Script</span>
+                            <span class="tag-new">Google APIs</span>
+                            <span class="tag-new">Maps API</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="https://github.com/AnthonnyM31" class="project-link" target="_blank">→</a>
+                </div>
+
+                <!-- PROYECTO 4 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80')">
+                        <div class="project-number">04</div>
+                        <div class="project-icon"><i class="fas fa-calendar-alt"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Automation System</div>
+                        <h3 class="project-title-new">Generador Masivo de Citas Logísticas</h3>
+                        <p class="project-description-new">
+                            Sistema que genera citas de manera masiva para distintos transportes con formato específico. Mejora del 70% en eficiencia operativa.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">Apps Script</span>
+                            <span class="tag-new">Excel Avanzado</span>
+                            <span class="tag-new">PDF Generation</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="https://github.com/AnthonnyM31" class="project-link" target="_blank">→</a>
+                </div>
+
+                <!-- PROYECTO 5 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800&q=80')">
+                        <div class="project-number">05</div>
+                        <div class="project-icon"><i class="fas fa-headset"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Web Application</div>
+                        <h3 class="project-title-new">Sistema de Gestión de Reclamos</h3>
+                        <p class="project-description-new">
+                            Aplicación web para registrar, generar y responder reclamos de transportistas usando Google Forms, Sheets, AppSheet y Apps Script.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">AppSheet</span>
+                            <span class="tag-new">Google Forms</span>
+                            <span class="tag-new">Apps Script</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="https://github.com/AnthonnyM31" class="project-link" target="_blank">→</a>
+                </div>
+
+                <!-- PROYECTO 6 -->
+                <div class="project-card">
+                    <div class="project-particles">
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                        <div class="particle"></div>
+                    </div>
+                    <div class="project-image-new" style="background-image: url('https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=800&q=80')">
+                        <div class="project-number">06</div>
+                        <div class="project-icon"><i class="fas fa-envelope-open-text"></i></div>
+                    </div>
+                    <div class="project-content-new">
+                        <div class="project-category">Automation</div>
+                        <h3 class="project-title-new">Gestor de Tickets Automático</h3>
+                        <p class="project-description-new">
+                            Sistema que genera tickets con plantillas personalizadas y gestor de citas con envíos automatizados por correo desde GoogleForms.
+                        </p>
+                        <div class="project-tags-new">
+                            <span class="tag-new">Apps Script</span>
+                            <span class="tag-new">HTML/CSS</span>
+                            <span class="tag-new">Email Automation</span>
+                        </div>
+                    </div>
+                    <div class="project-hover-indicator"></div>
+                    <a href="https://github.com/AnthonnyM31" class="project-link" target="_blank">→</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN EXPERIENCIA -->
+    <section id="experience">
+        <h2 class="section-title scroll-reveal">Experiencia & Educación</h2>
+        <div class="timeline">
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Presente</div>
+                    <h3 class="timeline-title">Full-Stack Developer</h3>
+                    <div class="timeline-company">Freelance / Proyectos Propios</div>
+                    <p class="timeline-description">
+                        Desarrollo de aplicaciones web completas y sistemas de automatización para clientes diversos. 
+                        Especialización en React, Node.js y Google Apps Script.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2023</div>
+                    <h3 class="timeline-title">Especialista en Automatización</h3>
+                    <div class="timeline-company">Empresa de Logística</div>
+                    <p class="timeline-description">
+                        Optimización de procesos logísticos mediante automatización con Google Workspace. 
+                        Desarrollo de sistemas personalizados con Apps Script y AppSheet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2022</div>
+                    <h3 class="timeline-title">Desarrollador Frontend</h3>
+                    <div class="timeline-company">Startup Tecnológica</div>
+                    <p class="timeline-description">
+                        Desarrollo de interfaces de usuario con React y colaboración en la arquitectura frontend. 
+                        Implementación de mejores prácticas y componentes reutilizables.
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item scroll-reveal">
+                <div class="timeline-empty"></div>
+                <div class="timeline-content">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2022</div>
+                    <h3 class="timeline-title">Ingeniería en Sistemas</h3>
+                    <div class="timeline-company">Universidad Tecnológica</div>
+                    <p class="timeline-description">
+                        Formación integral en desarrollo de software, algoritmos, bases de datos y arquitectura de sistemas. 
+                        Especialización en desarrollo web y cloud computing.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contact">
+        <div class="contact-content">
+            <h2 class="section-title scroll-reveal">¿Trabajamos Juntos?</h2>
+            <p class="contact-text scroll-reveal">
+                Estoy siempre abierto a nuevas oportunidades y colaboraciones. 
+                Si tienes un proyecto en mente o simplemente quieres conversar sobre desarrollo y automatización, no dudes en contactarme.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item scroll-reveal">
+                    <span class="contact-icon">📧</span>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">
+                        <a href="mailto:anthonny.marcelo.rojas@gmail.com">anthonny.marcelo.rojas@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item scroll-reveal">
+                    <span class="contact-icon">📱</span>
+                    <div class="contact-label">Teléfono</div>
+                    <div class="contact-value">
+                        <a href="tel:+51993236024">+51 939 236 024</a>
+                    </div>
+                </div>
+
+                <div class="contact-item scroll-reveal">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-label">Ubicación</div>
+                    <div class="contact-value">Lima, Perú</div>
+                </div>
+            </div>
+
+            <a href="mailto:anthonny.marcelo.rojas@gmail.com" class="cta-button scroll-reveal">Enviar Mensaje</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Anthonny Jesus Marcelo Rojas. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- JavaScript Principal -->
+    <script src="./src/js/main.js"></script>
+</body>
+</html>

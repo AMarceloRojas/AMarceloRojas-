@@ -160,3 +160,41 @@ document.querySelectorAll('.project-card').forEach(card => {
         card.style.transform = 'translateY(0) rotateX(0) rotateY(0)';
     });
 });
+// BUSCA ESTA SECCIÓN EN TU main.js:
+
+
+// CAMBIA ESTA LÍNEA:
+// let isDarkMode = false;  ❌ ELIMINA ESTA
+
+// POR ESTA:
+let isDarkMode = true;  // ✅ COMIENZA EN TRUE (modo oscuro)
+
+// El resto del código permanece igual
+function toggleDarkMode() {
+    isDarkMode = !isDarkMode;
+    document.body.classList.toggle('dark-mode');
+    
+    const icon = isDarkMode ? '🌙' : '☀️';
+    darkModeToggle.innerHTML = icon;
+    darkModeToggleMobile.innerHTML = icon;
+    
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// TAMBIÉN MODIFICA ESTA PARTE:
+// Cargar preferencia guardada
+const savedDarkMode = localStorage.getItem('darkMode');
+if (savedDarkMode !== null) {
+    isDarkMode = savedDarkMode === 'true';
+} else {
+    isDarkMode = true;  // ✅ Si no hay preferencia guardada, usa modo oscuro
+}
+
+if (isDarkMode) {
+    document.body.classList.add('dark-mode');
+    darkModeToggle.innerHTML = '🌙';
+    darkModeToggleMobile.innerHTML = '🌙';
+} else {
+    darkModeToggle.innerHTML = '☀️';
+    darkModeToggleMobile.innerHTML = '☀️';
+}

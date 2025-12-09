@@ -997,7 +997,7 @@ body.dark-mode .about-intro {
 }
 
 body.dark-mode .about-intro strong {
-    color: #8b9ff5;
+    color: #ffffff;
 }
 
 .achievements-section {
@@ -2383,4 +2383,8 @@ body.dark-mode footer p {
     .contact-value {
         font-size: 16px;
     }
+}/* Busca esto en tu CSS y actualízalo */
+.about-intro strong {
+    color: #1a1a1a;  /* Antes era #667eea (azul) */
+    font-weight: 600; /* Un poco más grueso para que destaque bien */
 }

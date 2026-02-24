@@ -48,13 +48,109 @@ if (darkModeToggleMobile) {
 const langToggle = document.getElementById('langToggle');
 const langToggleMobile = document.getElementById('langToggleMobile');
 let currentLang = 'es';
+const translations = {
+    es: {
+        nav_inicio: 'INICIO',
+        nav_sobre: 'SOBRE MÍ',
+        nav_proyectos: 'PROYECTOS',
+        nav_experiencia: 'EXPERIENCIA',
+        nav_contacto: 'CONTACTO',
+        subtitle: 'Junior DevOps / Backend Developer | DevSecOps',
+        location: 'Based in Lima, Perú',
+        bio_label: 'BIOGRAFÍA',
+        bio_text: 'Construyo y despliego aplicaciones fullstack con enfoque en DevOps y seguridad. NestJS + React + Docker + Kubernetes + CI/CD con GitHub Actions + Trivy. 2 años de experiencia real en Yobel SCM.',
+        contact_label: 'CONTACTO',
+        services_label: 'SERVICIOS',
+        services_text: 'Desarrollo Backend con NestJS\nCI/CD y DevSecOps con GitHub Actions + Trivy\nContenedores Docker y Kubernetes\nMonitoreo con Prometheus + Grafana',
+        stat_exp: 'AÑOS DE EXPERIENCIA',
+        stat_clients: 'CLIENTES SATISFECHOS',
+        stat_projects: 'PROYECTOS EN GITHUB',
+        stat_certs: 'CERTIFICACIONES',
+        about_title: 'Sobre Mí',
+        about_subtitle: 'Junior DevOps / Backend Developer enfocado en CI/CD, seguridad y observabilidad',
+        projects_title: 'Proyectos Destacados',
+        experience_title: 'Experiencia & Educación',
+        contact_title: '¿Trabajamos Juntos?',
+        contact_text: 'Estoy siempre abierto a nuevas oportunidades. Si tienes un proyecto o quieres conversar sobre DevOps y desarrollo, no dudes en contactarme.',
+        cta_button: 'Enviar Mensaje',
+    },
+    en: {
+        nav_inicio: 'HOME',
+        nav_sobre: 'ABOUT',
+        nav_proyectos: 'PROJECTS',
+        nav_experiencia: 'EXPERIENCE',
+        nav_contacto: 'CONTACT',
+        subtitle: 'Junior DevOps / Backend Developer | DevSecOps',
+        location: 'Based in Lima, Perú',
+        bio_label: 'BIOGRAPHY',
+        bio_text: 'I build and deploy fullstack applications focused on DevOps and security. NestJS + React + Docker + Kubernetes + CI/CD with GitHub Actions + Trivy. 2 years of real experience at Yobel SCM.',
+        contact_label: 'CONTACT',
+        services_label: 'SERVICES',
+        services_text: 'Backend Development with NestJS\nCI/CD and DevSecOps with GitHub Actions + Trivy\nDocker and Kubernetes Containers\nMonitoring with Prometheus + Grafana',
+        stat_exp: 'YEARS OF EXPERIENCE',
+        stat_clients: 'SATISFIED CLIENTS',
+        stat_projects: 'GITHUB PROJECTS',
+        stat_certs: 'CERTIFICATIONS',
+        about_title: 'About Me',
+        about_subtitle: 'Junior DevOps / Backend Developer focused on CI/CD, security and observability',
+        projects_title: 'Featured Projects',
+        experience_title: 'Experience & Education',
+        contact_title: 'Let\'s Work Together?',
+        contact_text: 'I\'m always open to new opportunities. If you have a project or want to talk about DevOps and development, feel free to reach out.',
+        cta_button: 'Send Message',
+    }
+};
+
+function applyTranslations(lang) {
+    const t = translations[lang];
+    
+    // Navbar
+    const navLinks = document.querySelectorAll('.nav-link');
+    const navKeys = ['nav_inicio', 'nav_sobre', 'nav_proyectos', 'nav_experiencia', 'nav_contacto'];
+    navLinks.forEach((link, i) => { if (navKeys[i]) link.textContent = t[navKeys[i]]; });
+
+    // Hero
+    const subtitle = document.querySelector('.subtitle');
+    const location = document.querySelector('.location');
+    if (subtitle) subtitle.textContent = t.subtitle;
+    if (location) location.textContent = t.location;
+
+    // Labels
+    const labels = document.querySelectorAll('.label');
+    labels.forEach(label => {
+        if (label.textContent.includes('BIOGRAF') || label.textContent.includes('BIOGRAPHY')) label.textContent = t.bio_label;
+        if (label.textContent.includes('CONTACT')) label.textContent = t.contact_label;
+        if (label.textContent.includes('SERVIC')) label.textContent = t.services_label;
+        if (label.textContent.includes('AÑO') || label.textContent.includes('YEAR')) label.textContent = t.stat_exp;
+        if (label.textContent.includes('CLIENTE') || label.textContent.includes('CLIENT')) label.textContent = t.stat_clients;
+        if (label.textContent.includes('PROYECTO') || label.textContent.includes('PROJECT')) label.textContent = t.stat_projects;
+        if (label.textContent.includes('CERTIF')) label.textContent = t.stat_certs;
+    });
+
+    // Section titles
+    const sectionTitles = document.querySelectorAll('.section-title');
+    const titleKeys = ['about_title', 'projects_title', 'experience_title', 'contact_title'];
+    sectionTitles.forEach((title, i) => { if (titleKeys[i]) title.textContent = t[titleKeys[i]]; });
+
+    // Section subtitle
+    const sectionSubtitle = document.querySelector('.section-subtitle');
+    if (sectionSubtitle) sectionSubtitle.textContent = t.about_subtitle;
+
+    // Contact text
+    const contactText = document.querySelector('.contact-text');
+    if (contactText) contactText.textContent = t.contact_text;
+
+    // CTA button
+    const ctaButton = document.querySelector('.cta-button');
+    if (ctaButton) ctaButton.textContent = t.cta_button;
+}
 
 function toggleLanguage() {
-    currentLang = currentLang === 'en' ? 'es' : 'en';
+    currentLang = currentLang === 'es' ? 'en' : 'es';
     const text = currentLang === 'en' ? 'ES' : 'EN';
     if (langToggle) langToggle.textContent = text;
     if (langToggleMobile) langToggleMobile.textContent = text;
-    // Aquí puedes agregar la lógica para cambiar el contenido del sitio
+    applyTranslations(currentLang);
 }
 
 if (langToggle) {

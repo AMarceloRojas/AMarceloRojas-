@@ -556,7 +556,7 @@ body.dark-mode .social-links a:hover {
     cursor: pointer;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     font-size: 20px;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border-radius: 30%;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: visible;
@@ -1140,7 +1140,7 @@ body.dark-mode .skills-header p {
     justify-content: center;
     background: #fff;
     border: 2px solid #e5e5e5;
-    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    border-radius: 50%;
     transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     cursor: pointer;
     overflow: hidden;

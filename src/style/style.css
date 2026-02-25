@@ -545,8 +545,8 @@ body.dark-mode .social-links a:hover {
 }
 
 .control-btn {
-    width: 55px;
-    height: 55px;
+    width: 36px;
+    height:36px;
     border: none;
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(20px);

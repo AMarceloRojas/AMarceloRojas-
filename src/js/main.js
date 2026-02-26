@@ -293,4 +293,16 @@ if (isDarkMode) {
 } else {
     darkModeToggle.innerHTML = '☀️';
     darkModeToggleMobile.innerHTML = '☀️';
+}// MODAL DEMO
+function openDemoModal(gif) {
+    const modal = document.getElementById('demoModal');
+    document.getElementById('demoGif').src = gif;
+    modal.style.display = 'flex';
 }
+function closeDemoModal() {
+    document.getElementById('demoModal').style.display = 'none';
+    document.getElementById('demoGif').src = '';
+}
+document.getElementById('demoModal').addEventListener('click', function(e) {
+    if(e.target === this) closeDemoModal();
+});

@@ -64,7 +64,7 @@ const translations = {
         services_text: 'Desarrollo Backend con NestJS\nCI/CD y DevSecOps con GitHub Actions + Trivy\nContenedores Docker y Kubernetes\nMonitoreo con Prometheus + Grafana',
         stat_exp: 'AÑOS DE EXPERIENCIA',
         stat_clients: 'CLIENTES SATISFECHOS',
-        stat_projects: 'PROYECTOS EN GITHUB',
+        stat_projects: 'PROYECTOS CON CI/CD',
         stat_certs: 'CERTIFICACIONES',
         about_title: 'Sobre Mí',
         about_subtitle: 'Junior DevOps / Backend Developer enfocado en CI/CD, seguridad y observabilidad',
